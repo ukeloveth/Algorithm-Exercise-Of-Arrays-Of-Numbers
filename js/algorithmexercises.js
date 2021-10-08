@@ -11,14 +11,18 @@ function duplicateNumbers(mainarr){
     for(let j=0;j<mainarr.length;j++){
         let val = mainarr[j]
         if(newArr.indexOf(val)=== -1){
+            newArr.splice(1,2)
             newArr.push(val)
+            
+            
 
         }
     }
     return newArr;
 
 }
-let test = [4,5,1,5,4,2]
+
+let test = [2,4,5,2,6,3,5]
 //let test =[6,4,5,6,4,3]
  //let test = [2,8,10,7,8,2,7]
 //let test =[2,4,5,2,6,3,5]
@@ -37,13 +41,28 @@ console.log(duplicateNumbers(test))
 //Questions 3:
 //Given an array of numbers,return the second smallest and second largest numbers in an array
 //* [2,3,4,9,7]=>[3,7]
-// const num = [2,3,4,9,7]
+const numVal = [2,3,4,9,7];
+let smallVal=[]
+let largestVal =[]
+function secondSmallestNum(numVal){
+    for(let i=0;i<numVal.length;i++){
+        numVal.sort;
+        numVal.indexOf(1)
+        smallVal.push(numVal)
+    }
+return smallVal;
+}
+console.log(secondSmallestNum(numVal))
 
-// num.splice(2,2)
-// num.splice(0,1)
-// console.log(num)
-//solutions.
-//Questions
-// 1. [2,4,5,2,6,3,5]=>[4,3,6]
-//const num =[2,4,5,2,6,3,5];
+function secondLargestNum(numVal){
+    for(let j=0;i<numVal.length;j++){
+        numVal.sort;
+        numVal.indexOf(numVal.length-1);
+        largestVal.push(numVal)
+
+    }
+    return largestVal;
+}
+console.log(secondLargestNum(numVal))
+
 
