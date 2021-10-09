@@ -44,25 +44,40 @@ console.log(duplicateNumbers(test))
 const numVal = [2,3,4,9,7];
 let smallVal=[]
 let largestVal =[]
-function secondSmallestNum(numVal){
-    for(let i=0;i<numVal.length;i++){
-        numVal.sort;
-        numVal.indexOf(1)
-        smallVal.push(numVal)
-    }
-return smallVal;
-}
-console.log(secondSmallestNum(numVal))
+const secondSmallerVal = numVal.filter((sumac)=>{
+return sumac === 3;
+smallVal.push(numVal)
+});
+console.log(secondSmallerVal)
+ 
+const secondLargestVal = numVal.filter((lamuc)=>{
+    return lamuc ===7;
+    largestVal.push(numVal)
+    
+});
+console.log(secondLargestVal)
 
-function secondLargestNum(numVal){
-    for(let j=0;i<numVal.length;j++){
-        numVal.sort;
-        numVal.indexOf(numVal.length-1);
-        largestVal.push(numVal)
+// my second attempt for No3 Question
+//const numVal = [2,3,4,9,7];
+//let smallVal=[]
+//let largestVal =[]
+// function secondSmallestNum(numVal){
+//     for(let i=0;i<numVal.length;i++){
+//         numVal.sort;
+//         numVal.indexOf(1)
+//         smallVal.push(numVal)
+//     }
+// return smallVal;
+// }
+// console.log(secondSmallestNum(numVal))
 
-    }
-    return largestVal;
-}
-console.log(secondLargestNum(numVal))
+// function secondLargestNum(numVal){
+//     for(let j=0;i<numVal.length;j++){
+//         numVal.sort;
+//         numVal.indexOf(numVal.length-1);
+//         largestVal.push(numVal)
 
-
+//     }
+//     return largestVal;
+// }
+// console.log(secondLargestNum(numVal))
